@@ -1,4 +1,4 @@
-// 数字进stack, 符号pop俩之后再push. 返回stack最上面那个
+// 数字进stack, 符号pop俩之后再push. 返回stack最上面那个。 注意应该考虑4096
 
 import java.util.*;
 public class StackCalculate {
