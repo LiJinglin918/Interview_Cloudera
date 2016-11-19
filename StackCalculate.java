@@ -15,6 +15,8 @@ public class StackCalculate {
 				if (!stack.isEmpty()) {
 					int a = stack.pop();
 					int b = stack.pop();
+					if (a + b > 4096)
+						return -1;
 					stack.push(a + b);
 				}
 			}
@@ -22,6 +24,8 @@ public class StackCalculate {
 				if (!stack.isEmpty()) {
 					int a = stack.pop();
 					int b = stack.pop();
+					if (a * b > 4096)
+						return -1;
 					stack.push(a * b);
 				}
 			}
